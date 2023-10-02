@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: hack, roboto, sans-serif;
+    background-color: aqua;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    flex-direction: column;
+}
+
+.content {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#task {
+    padding: 10px;
+    margin: 5px;
+    width: 300px;
+}
+
+#btn {
+    padding: 10px;
+    background-color: greenyellow;
+    border: 2px solid yellow;
+    cursor: pointer;
+    transition: .2s;
+    margin-right: 3px;
+}
+
+#btnSecond {
+    padding: 10px;
+    background-color: red;
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+    transition: .2s;
+}
+
+#btn:hover,
+#btnSecond:hover {
+    transform: scale(1.1);
+    transition: .2s;
+}
+
+.result {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+}
+
+.result li {
+    font-weight: bold;
+    background-color: azure;
+    margin: 2px;
+    border-radius: 5px;
+    padding: 10px;
+    width: 300px;
+}
+
+.result li input {
+    margin: 7px;
+    padding: 10px;
+}
+
+.delete {
+    padding: 10px;
+    float: right;
+    border: none;
+    margin: 5px;
+    background: url(dumb.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: .2s;
+}
+
+.delete:hover {
+    transform: scale(1.1);
+    transition: .2s;
+}
